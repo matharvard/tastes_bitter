@@ -4,12 +4,12 @@ module TastesBitter
 
     attr_accessor :mailer_receiver
     attr_accessor :mailer_sender
-    attr_accessor :mailer_subject
+    attr_accessor :mailer_subject_prefix
 
     def initialize
       @mailer_receiver = "notifications@example.com"
       @mailer_sender = "notifications@example.com"
-      @mailer_subject = "JavaScript Error"
+      @mailer_subject_prefix = "[JavaScript Error] "
     end
 
   end
