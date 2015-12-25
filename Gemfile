@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
 # Declare your gem's dependencies in tastes_bitter.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
