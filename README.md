@@ -37,3 +37,11 @@ end
 ```
 
 Make sure you have [ActionMailer configured](http://api.rubyonrails.org/classes/ActionMailer/Base.html) in order for emails to be sent.
+
+Add the JavaScript file to `application.js`.
+
+```coffeescript
+//= require tastes_bitter
+```
+
+It **does** matter where you include the JavaScript. It will only catch errors that occur *after* it has been loaded into the page. In general, you'll want to include it around the top of `application.js`. This will ensure it catches all errors from any other JavaScript code in your application.
