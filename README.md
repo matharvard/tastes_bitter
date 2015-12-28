@@ -7,7 +7,7 @@ Get an email notification when a JavaScript error occurs in your Rails applicati
 Add the gem to your `Gemfile`.
 
 ```ruby
-gem 'tastes_bitter'
+gem 'tastes_bitter', github: 'matharvard/tastes_bitter'
 ```
 
 Use Bundler to install it.
@@ -41,7 +41,7 @@ Make sure you have [ActionMailer configured](http://api.rubyonrails.org/classes/
 Add the JavaScript file to `application.js`.
 
 ```coffeescript
-//= require tastes_bitter
+//= require tastes_bitter/javascript_errors
 ```
 
 It **does** matter where you include the JavaScript. It will only catch errors that occur *after* it has been loaded into the page. In general, you'll want to include it around the top of `application.js`. This will ensure it catches all errors from any other JavaScript code in your application.
