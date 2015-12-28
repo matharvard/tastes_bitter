@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = ["contact@matharvard.ca"]
   s.homepage = "https://github.com/matharvard/tastes_bitter"
   s.summary = "JavaScript error notifications for Rails."
-  s.description = "TODO: Description of TastesBitter."
+  s.description = "JavaScript error notifications for Rails."
   s.license = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
