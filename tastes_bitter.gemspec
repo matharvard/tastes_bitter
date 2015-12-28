@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.authors = ["Mat Harvard"]
   s.email = ["contact@matharvard.ca"]
   s.homepage = "https://github.com/matharvard/tastes_bitter"
-  s.summary = "TODO: Summary of TastesBitter."
+  s.summary = "JavaScript error notifications for Rails."
   s.description = "TODO: Description of TastesBitter."
   s.license = "MIT"
 
