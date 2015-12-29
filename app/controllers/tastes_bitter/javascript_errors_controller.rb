@@ -5,6 +5,8 @@ module TastesBitter
 
   class JavascriptErrorsController < ApplicationController
 
+    # Responsible for handling errors sent from the browser, parsing the data,
+    # and sending the email with the information about the error.
     def create
       browser = Browser.new(ua: params["user_agent"])
 
