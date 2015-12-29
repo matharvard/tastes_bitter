@@ -12,13 +12,13 @@ gem 'tastes_bitter', github: 'matharvard/tastes_bitter'
 
 Use Bundler to install it.
 
-```sh
+```console
 $ bundle install
 ```
 
 Run the install generator.
 
-```sh
+```console
 $ bundle exec rails generate tastes_bitter:install
 ```
 
