@@ -12,7 +12,7 @@ window.onerror = (message, file_or_page, line_number) ->
 
   xhr?.abort()
   xhr = new XMLHttpRequest
-  xhr.open 'POST', '/tastes_bitter/javascript_errors', true
+  xhr.open 'POST', '/__javascript_errors', true
   xhr.send form
 
   # Return `false` to call the default handler. Returning `true` would skip it.

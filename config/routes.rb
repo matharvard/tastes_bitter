@@ -1,9 +1,5 @@
-if TastesBitter.configuration.routes_enabled?
+Rails.application.routes.draw do
 
-  Rails.application.routes.draw do
-
-    resources :javascript_errors, only: :create
-
-  end
+  resources :__javascript_errors, controller: "tastes_bitter/javascript_errors", only: :create
 
 end

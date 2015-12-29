@@ -5,17 +5,11 @@ module TastesBitter
     attr_accessor :mailer_receiver
     attr_accessor :mailer_sender
     attr_accessor :mailer_subject_prefix
-    attr_accessor :routes
 
     def initialize
       @mailer_receiver = "notifications@example.com"
       @mailer_sender = "notifications@example.com"
       @mailer_subject_prefix = "[JavaScript Error] "
-      @routes = true
-    end
-
-    def routes_enabled?
-      @routes
     end
 
   end
