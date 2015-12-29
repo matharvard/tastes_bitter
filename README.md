@@ -45,3 +45,7 @@ Add the JavaScript file to `application.js`.
 ```
 
 It **does** matter where you include the JavaScript. It will only catch errors that occur *after* it has been loaded into the page. In general, you'll want to include it around the top of `application.js`. This will ensure it catches all errors from any other JavaScript code in your application.
+
+## How it works
+
+The JavaScript hooks into the `window.onerror` event by sending an XHR with the error data which is then emailed.
