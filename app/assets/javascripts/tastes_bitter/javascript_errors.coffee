@@ -15,5 +15,5 @@ window.onerror = (message, file_or_page, line_number) ->
   xhr.open 'POST', '/__javascript_errors', true
   xhr.send form
 
-  # Return `false` to call the default handler. Returning `true` would skip it.
+  # Return `false` to call the default handler.
   false
