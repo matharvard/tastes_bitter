@@ -8,10 +8,6 @@ module TastesBitter
     #   @routes = Engine.routes
     # end
 
-    # test "the truth" do
-    #   assert true
-    # end
-    
     test "should respond with ok status without params" do
       xhr :post, :create
       assert_response :ok
