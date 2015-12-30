@@ -11,7 +11,7 @@ The JavaScript hooks into the `window.onerror` event by sending an XHR with the 
 Add the gem to your `Gemfile`.
 
 ```ruby
-gem 'tastes_bitter', github: 'matharvard/tastes_bitter'
+gem 'tastes_bitter'
 ```
 
 Use Bundler to install it.
