@@ -1,3 +1,5 @@
+<h1>Error Info:</h1>
+
 <p>
   Error Message: <%= @error_info[:message] %><br>
   File: <%= @error_info[:file_or_page] %><br>
@@ -5,5 +7,7 @@
   User Agent: <%= @error_info[:user_agent] %><br>
   Current Page: <%= @error_info[:current_page] %><br>
   Platform: <%= @error_info[:platform] %><br>
-  Browser: <%= @error_info[:browser_name] %> <%= @error_info[:browser_version] %>
+  Browser: <%= @error_info[:browser_name] %> <%= @error_info[:browser_version] %><br>
+  IP Address: <%= @error_info[:user_ip] %><br>
+  Referrer: <%= @error_info[:referrer] %>
 </p>

@@ -18,7 +18,9 @@ module TastesBitter
         current_page: params["current_page"],
         platform: browser.platform.to_s.humanize,
         browser_name: browser.name,
-        browser_version: browser.full_version
+        browser_version: browser.full_version,
+        user_ip: request.remote_ip,
+        referrer: request.env["HTTP_REFERER"]
       }
 
       ::TastesBitter::JavascriptErrorsMailer.javascript_error(error_info).deliver_later
