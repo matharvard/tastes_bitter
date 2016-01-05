@@ -1,4 +1,6 @@
-window.onerror = (message, file_or_page, line_number, column_number, error) ->
+# `column_number` and `error_object` aren't supported across all browsers, so
+# they are given a default value of `null`.
+window.onerror = (message, file_or_page, line_number, column_number = null, error_object = null) ->
   xhr = null
   form = null
 
@@ -9,7 +11,7 @@ window.onerror = (message, file_or_page, line_number, column_number, error) ->
   form.append 'column_number', column_number
   form.append 'user_agent', navigator.userAgent
   form.append 'current_page', window.location.href
-  form.append 'stack_trace', error.stack
+  form.append 'stack_trace', error_object?.stack
 
   xhr?.abort()
   xhr = new XMLHttpRequest
