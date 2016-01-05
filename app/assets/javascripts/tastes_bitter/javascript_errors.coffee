@@ -1,6 +1,5 @@
 window.onerror = (message, file_or_page, line_number, column_number, error) ->
   xhr = null
-  error_info = null
   form = null
 
   form = new FormData
