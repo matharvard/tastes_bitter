@@ -1,4 +1,4 @@
-window.onerror = (message, file_or_page, line_number) ->
+window.onerror = (message, file_or_page, line_number, column_number, error) ->
   xhr = null
   error_info = null
   form = null
@@ -7,8 +7,10 @@ window.onerror = (message, file_or_page, line_number) ->
   form.append 'message', message
   form.append 'file_or_page', file_or_page
   form.append 'line_number', line_number
+  form.append 'column_number', column_number
   form.append 'user_agent', navigator.userAgent
   form.append 'current_page', window.location.href
+  form.append 'stack_trace', error.stack
 
   xhr?.abort()
   xhr = new XMLHttpRequest

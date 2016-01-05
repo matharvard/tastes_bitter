@@ -14,13 +14,15 @@ module TastesBitter
         message: params["message"],
         file_or_page: params["file_or_page"],
         line_number: params["line_number"],
+        column_number: params["column_number"],
         user_agent: params["user_agent"],
         current_page: params["current_page"],
         platform: browser.platform.to_s.humanize,
         browser_name: browser.name,
         browser_version: browser.full_version,
         user_ip: request.remote_ip,
-        referrer: request.env["HTTP_REFERER"]
+        referrer: request.env["HTTP_REFERER"],
+        stack_trace: params["stack_trace"]
       }
 
       ::TastesBitter::JavascriptErrorsMailer.javascript_error(error_info).deliver_later
